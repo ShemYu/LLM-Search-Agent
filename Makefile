@@ -6,3 +6,6 @@ run:
 lint:
 	isort .
 	black .
+
+tree:
+	tree -I *.pyc -I TSMC* -I test_chroma -I __pycache__ .
