@@ -1,11 +1,9 @@
-from decouple import config
+from src.api.server import create_app
 
-print(config("OPENAI_API_KEY"))
+app = create_app()
 
-# TODO: HIGH
-# - Set up the basic structure for an API server.
-# - Expected Outcome: A server that can be started and listens on a specific port.
-# - Note: Consider using Flask or FastAPI for the server framework.
+if __name__ == "__main__":
+    app.run()
 
 # TODO: HIGH
 # - Implement the 'healthz' endpoint.
