@@ -13,15 +13,16 @@ The following directory layout represents the current design of the RAG-Engine-T
 ├── LICENSE
 ├── README.md
 ├── experiments
-│   ├── langchain.ipynb    # Notebook for LangChain experiments
-│   └── openai-chat.ipynb  # Notebook for OpenAI chat experiments
+│   ├── first_exp_of_langchain_with_TSMC_reports.ipynb    # Notebook for LangChain experiments
+│   └── openai-chat.ipynb                                 # Notebook for OpenAI chat experiments
 ├── requirements.txt       # List of Python dependencies
 └── src
     ├── api
     │   ├── endpoints
     │   │   ├── __init__.py
-    │   │   ├── healthz.py  # Endpoint for health checks
-    │   │   └── test.py     # Endpoint for testing
+    │   │   ├── healthz.py    # Endpoint for health checks
+    │   │   ├── test.py       # Endpoint for testing
+    │   │   └── langchain.py  # Endpoint for LangChain features
     │   ├── schemas
     │   │   ├── __init__.py
     │   │   ├── request_schema.py  # IO schema for API requests
